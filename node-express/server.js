@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello from the server!');
+  res.send('Hello from the server! v2');
 });
 
 app.get('/health', (req, res) => {
@@ -11,5 +11,5 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`app listening at http://localhost:${port}`);
+  console.log(`v2app listening at http://localhost:${port}`);
 });
