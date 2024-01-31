@@ -17,4 +17,4 @@ metadata:
     carto.run/workload-namespace: my-space
 spec:
   source:
-    image: ghcr.io/myminseok/tap-service/minseok-supply-chain/node-http-my-space-bundle:0e4ba1d1-e67a-4594-b63b-0cdfb8fa9ce2
+    image: ghcr.io/myminseok/tap-service/minseok-supply-chain/node-http-my-space-bundle:41b79c9e-9caa-46a1-8bd3-02cb2f37868c
