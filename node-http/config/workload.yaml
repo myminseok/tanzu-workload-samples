@@ -1,20 +1,19 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: node-express
+  name: node-http
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: node-express
+    app.kubernetes.io/part-of: node-http
     apps.tanzu.vmware.com/has-tests: true
   annotations:
     autoscaling.knative.dev/minScale: "1"
 spec:
   source:
-    subPath: node-express
+    subPath: node-http
     git:
-      #url: https://github.com/vmware-tanzu/application-accelerator-samples
       url : https://github.com/myminseok/tanzu-workload-samples
-      ### subPath: node-express  ## warning: don't put here, otherwise there will be error
+      ### subPath: node-http  ## warning: don't put here, otherwise there will be error
       ref:
         branch: main
   params:
