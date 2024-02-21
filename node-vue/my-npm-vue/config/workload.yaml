@@ -19,9 +19,9 @@ spec:
   - name: testing_pipeline_matching_labels
     value:
       apps.tanzu.vmware.com/language: nodejs
-  build:
-    env:
-      # - name: BP_NODE_RUN_SCRIPTS #https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/getting-started-customize-dev-portal.html
-      #   value: 'set-tpb-config,portal:pack'
-      - name: BP_LAUNCHPOINT
-        value: "./src/main.js"
+  # build:
+  #   env:
+  #     # - name: BP_NODE_RUN_SCRIPTS #https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/getting-started-customize-dev-portal.html
+  #     #   value: 'set-tpb-config,portal:pack'
+  #     - name: BP_LAUNCHPOINT
+  #       value: "./src/main.js"
