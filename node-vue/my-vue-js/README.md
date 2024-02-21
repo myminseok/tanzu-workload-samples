@@ -1,20 +1,3 @@
-
-
-# required files for TAP build
-
-- nginx.conf
-- mime.types
-- package.json
-
-https://paketo.io/docs/howto/nodejs/ https://vuejs.org/guide/quick-start
-
-
-# main page
-my-vue-js/node_modules/@types/node/child_process.d.ts
-
-
-
-
 # my-vue-js
 
 This template should help get you started developing with Vue 3 in Vite.
