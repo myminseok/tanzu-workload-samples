@@ -13,9 +13,9 @@ spec:
     subPath: node-express
     git:
       url : https://github.com/myminseok/tanzu-workload-samples
-        subPath: node-vue/my-vue-js  ## warning: don't put here, otherwise there will be error
       ref:
         branch: main
+      subPath: node-vue/my-vue-js
   params:
   - name: testing_pipeline_matching_labels
     value:
