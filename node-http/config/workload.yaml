@@ -13,7 +13,6 @@ spec:
     subPath: node-http
     git:
       url : https://github.com/myminseok/tanzu-workload-samples
-      ### subPath: node-http  ## warning: don't put here, otherwise there will be error
       ref:
         branch: main
   params:
