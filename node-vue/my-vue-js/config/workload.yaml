@@ -10,12 +10,11 @@ metadata:
     autoscaling.knative.dev/minScale: "1"
 spec:
   source:
-    subPath: node-express
+    subPath: node-vue/my-vue-js
     git:
       url : https://github.com/myminseok/tanzu-workload-samples
       ref:
         branch: main
-      subPath: node-vue/my-vue-js
   params:
   - name: testing_pipeline_matching_labels
     value:
