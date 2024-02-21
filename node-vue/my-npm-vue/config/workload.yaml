@@ -1,0 +1,21 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: my-npm-vue
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: my-npm-vue
+    apps.tanzu.vmware.com/has-tests: true
+  annotations:
+    autoscaling.knative.dev/minScale: "1"
+spec:
+  source:
+    subPath: node-vue/my-npm-vue
+    git:
+      url : https://github.com/myminseok/tanzu-workload-samples
+      ref:
+        branch: main
+  params:
+  - name: testing_pipeline_matching_labels
+    value:
+      apps.tanzu.vmware.com/language: nodejs
