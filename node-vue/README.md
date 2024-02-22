@@ -36,11 +36,13 @@ npm run build
 - .yarnrc
 - .npmrc
 - npmrc as secret [my-npm-vue/config/nodejs-npmrc-secret.yml](my-npm-vue/config/nodejs-npmrc-secret.yml)
+
+  
 ```
-tanzu apps workload create WORKLOAD-NAME \
-  --param-yaml buildServiceBindings='[{"name": "settings-xml", "kind": "Secret"}]' \
+tanzu apps workload apply --file ./config/workload.yaml \
+  --param-yaml buildServiceBindings='[{"name": "nodejs-npmrc", "kind": "Secret"}]'
 ```
-- setting.xml example: https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/tanzu-build-service-tbs-workload-config.html
+- buildServiceBindings example: https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/tanzu-build-service-tbs-workload-config.html
 - npmrc, yarnrc https://docs.vmware.com/en/VMware-Tanzu-Buildpacks/services/tanzu-buildpacks/GUID-nodejs-nodejs-buildpack.html
 - BP_NODE_RUN_SCRIPTS: https://paketo.io/docs/howto/nodejs/
 
