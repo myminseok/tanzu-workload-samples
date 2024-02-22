@@ -35,7 +35,7 @@ npm run build
 #### relevent file depends on build strategy(such as airgapped env)
 - .yarnrc
 - .npmrc
-- npmrc as secret
+- npmrc as secret [my-npm-vue/config/nodejs-npmrc-secret.yml](my-npm-vue/config/nodejs-npmrc-secret.yml)
 ```
 tanzu apps workload create WORKLOAD-NAME \
   --param-yaml buildServiceBindings='[{"name": "settings-xml", "kind": "Secret"}]' \
