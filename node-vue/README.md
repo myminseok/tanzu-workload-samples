@@ -1,7 +1,4 @@
-
-### how it works
-- https://paketo.io/docs/howto/nodejs/
-
+This is example app to show how node vue js app should be prepared for tanzu workload from many packto buildpack options. those options should be customized for each app accordinly. 
 
 ### Creating a new project
 - https://vuejs.org/guide/quick-start
