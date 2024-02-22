@@ -33,8 +33,8 @@ npm run build
 - how it works: https://paketo.io/docs/howto/nodejs/
 
 #### relevent file depends on build strategy(such as airgapped env)
-- .yarnrc
-- .npmrc
+- .yarnrc (optional depending on your project design)
+- .npmrc 
 - npmrc as secret [my-npm-vue/config/nodejs-npmrc-secret.yml](my-npm-vue/config/nodejs-npmrc-secret.yml)
 
   
@@ -44,5 +44,5 @@ tanzu apps workload apply --file ./config/workload.yaml \
 ```
 - buildServiceBindings example: https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/tanzu-build-service-tbs-workload-config.html
 - npmrc, yarnrc https://docs.vmware.com/en/VMware-Tanzu-Buildpacks/services/tanzu-buildpacks/GUID-nodejs-nodejs-buildpack.html
-- BP_NODE_RUN_SCRIPTS: https://paketo.io/docs/howto/nodejs/
+- BP_NODE_RUN_SCRIPTS(optional depending on your project design): https://paketo.io/docs/howto/nodejs/
 
