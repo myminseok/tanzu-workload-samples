@@ -32,7 +32,7 @@ npm run build
 #### relevent file depends on build strategy(such as airgapped env)
 - .yarnrc (optional depending on your project design)
 - .npmrc 
-- npmrc as secret [my-npm-vue/config/nodejs-npmrc-secret.yml](my-npm-vue/config/nodejs-npmrc-secret.yml)
+- npmrc injection as secret to TAP build [my-npm-vue/config/nodejs-npmrc-secret.yml](my-npm-vue/config/nodejs-npmrc-secret.yml)
 
   
 ```
