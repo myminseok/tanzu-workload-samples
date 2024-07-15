@@ -19,13 +19,3 @@ spec:
   - name: testing_pipeline_matching_labels
     value:
       apps.tanzu.vmware.com/language: nodejs
-  - name: additionalTags
-    value: ["ghcr.io/myminseok/tap-service/minseok-supply-chain/my-npm-vue-my-space:mytag"]
-  build:
-    env:
-    - name: BP_INCLUDE_FILES # upload local file to app image.
-      value: "tesetfile"
-    # - name: BP_NODE_RUN_SCRIPTS #https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/getting-started-customize-dev-portal.html
-    #   value: 'set-tpb-config,portal:pack'
-    # - name: BP_LAUNCHPOINT
-    #   value: "./src/main.js"
