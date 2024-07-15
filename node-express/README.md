@@ -10,6 +10,7 @@ install the dependencies
 
 https://docs.vmware.com/en/VMware-Tanzu-Buildpacks/services/tanzu-buildpacks/GUID-nodejs-nodejs-buildpack.html
 
-
+```
 npm ci --cache npm-cache
 tanzu apps workload apply -f config/workload.yaml -n my-space --local-path . --source-image infra-harbor.lab.pcfdemo.net/regops/node-express --registry-ca-cert /data/tapconfig/tkg-custom-ca.crt -y
+```
